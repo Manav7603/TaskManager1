@@ -23,3 +23,6 @@
 2025-01-22T18:36:48.820Z - Error fetching task: Cast to ObjectId failed for value "history" (type string) at path "_id" for model "Task"
 2025-01-22T18:36:57.236Z - Error fetching task: Cast to ObjectId failed for value "search" (type string) at path "_id" for model "Task"
 2025-01-22T18:37:14.296Z - Error fetching task: Cast to ObjectId failed for value "count" (type string) at path "_id" for model "Task"
+2025-01-23T07:11:43.662Z - Created a new task
+2025-01-23T07:26:04.684Z - Created a new task
+2025-01-23T07:40:14.043Z - Created a new task
