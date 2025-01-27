@@ -70,6 +70,7 @@ The backend API is documented using **Swagger**. It provides an interactive inte
 ---
 
 ## Getting Started
+
 **`npm start` for concurrent running of both the scripts**
 
 **Navigate to: ``http://localhost:5713/`**
