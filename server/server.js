@@ -18,6 +18,14 @@ const app = express(); // Initialize `app` here
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
+// Add proper CORS configuration
+const cors = require('cors');
+
+app.use(cors({
+  origin: 'http://localhost:5173', // Vite's default port
+  methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT']
+}));
+
 // Swagger configuration
 const swaggerOptions = {
   definition: {

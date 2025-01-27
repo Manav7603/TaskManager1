@@ -1,9 +1,13 @@
-# Task Management API
+# Task Management Application
 
 ## Overview
-The **Task Management API** is a robust RESTful service designed to facilitate user authentication and task management. It allows users to securely manage their tasks, with strict access controls ensuring only the creator of a task can modify or delete it. The API uses **MongoDB** for data storage and includes features like logging, validation, and flexible environment configurations.
+The **Task Management Application** is a complete solution that combines a robust RESTful API with a responsive frontend interface for managing tasks. The backend, built using **Node.js** and **MongoDB**, provides secure user authentication and task management, while the frontend, developed using **React.js**, offers a seamless user experience for interacting with the API.
+
+---
 
 ## Features
+
+### Backend Features:
 - **User Authentication**: Secure user registration and login with JWT-based authentication.
 - **Task Management**: Full CRUD operations (Create, Read, Update, Delete) for tasks.
 - **Access Control**: Only the creator of a task can modify or delete it.
@@ -13,9 +17,20 @@ The **Task Management API** is a robust RESTful service designed to facilitate u
 - **Logging**: Logs all API operations (e.g., creation, updates, deletions) for tracking and debugging.
 - **Environment Configurations**: Configurations managed using `.env` files for easy setup.
 
+### Frontend Features:
+- **Responsive Interface**: User-friendly interface built with **React.js**.
+- **Authentication**: Login and register functionality integrated with the backend API.
+- **Task Management**: 
+  - View all tasks in a paginated format.
+  - Create, update, and delete tasks directly from the frontend.
+  - View details of individual tasks.
+- **Protected Routes**: Access to task management is restricted to authenticated users only.
+- **Dynamic Forms**: Create and edit tasks using easy-to-use forms.
+- **Error Handling**: Displays appropriate error messages for failed actions.
+
 ---
 
-## Endpoints
+## Endpoints (Backend)
 
 ### **Authentication**
 | Endpoint               | Method | Description                           |
@@ -34,8 +49,19 @@ The **Task Management API** is a robust RESTful service designed to facilitate u
 
 ---
 
+## Frontend Routes
+
+| Route             | Description                                              |
+|-------------------|----------------------------------------------------------|
+| `/register`       | User registration page.                                  |
+| `/login`          | User login page.                                         |
+| `/tasks`          | Displays a paginated list of all tasks.                  |
+| `/tasks/:id`      | Displays details for a specific task and allows editing. |
+
+---
+
 ## Swagger Documentation
-The API is documented using **Swagger** and can be accessed via the `/api-docs` endpoint. The documentation provides an interactive interface for exploring and testing the API.
+The backend API is documented using **Swagger**. It provides an interactive interface for exploring and testing the API.
 
 ### Access Swagger Documentation:
 - Navigate to: `http://localhost:5000/api-docs`
@@ -49,7 +75,7 @@ The API is documented using **Swagger** and can be accessed via the `/api-docs` 
 - **Node.js** (v14 or higher)
 - **MongoDB** (local or hosted, e.g., MongoDB Atlas)
 
-### Setup Instructions
+### Backend Setup Instructions
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Manav7603/Taskmanager1.git

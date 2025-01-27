@@ -1,2 +1,5 @@
-node_modules/
-
+./node_modules/
+./server/node_modules
+./client/node_modules
+src/task-manager-frontend
+node_modules
