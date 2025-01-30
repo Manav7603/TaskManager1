@@ -3,3 +3,4 @@
 ./client/node_modules
 src/task-manager-frontend
 node_modules
+/tests
